@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳门成柿大学 - 柿柿如意，学业有成！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #ff4500; /* 柿子橙色 */
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #ffffff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ffd700; /* 金色悬停 */
+        }
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x400/ff4500/ffffff?text=柿子校园');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            border: 3px solid #ffd700;
+            animation: pulse 2s infinite;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem;
+            transition: transform 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #ff4500;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #228b22; /* 绿色，象征柿子叶 */
+        }
+        .footer {
+            background-color: #333;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .retro-text {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ff4500;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <img src="https://via.placeholder.com/100x100/ff4500/ffffff?text=柿子" alt="澳门成柿大学Logo" class="logo">
+        <div class="flex justify-center">
+            <a href="#">首页</a>
+            <a href="#">关于成柿</a>
+            <a href="#">柿子学院</a>
+            <a href="#">招生信息</a>
+            <a href="#">柿子商店</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div>
+            <h1 class="text-4xl font-bold">欢迎来到澳门成柿大学！</h1>
+            <p class="text-xl retro-text">柿柿如意，学业有“熟”！</p>
+        </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <h2 class="text-2xl font-bold text-center mb-6 retro-text">关于澳门成柿大学</h2>
+        <p class="text-lg text-center mb-6">
+            澳门成柿大学（Macau Persimmon University, MPU）是全球首家以柿子为核心的虚构学府！<br>
+            我们的目标是让每位学生“熟”透知识，成为柿界顶尖人才！
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="card">
+                <h3 class="text-xl font-bold">柿子课程</h3>
+                <p>学习如何烹饪柿子、设计柿子表情包，甚至探索柿子哲学！</p>
+                <a href="#" class="btn">了解更多</a>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">柿子活动</h3>
+                <p>参加年度“柿子节”，体验柿子投掷大赛和柿子诗朗诵！</p>
+                <a href="#" class="btn">查看活动</a>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-bold">招生信息</h3>
+                <p>即刻加入我们，成为下一位柿子大师！（无需真实学历）</p>
+                <a href="#" class="btn">立即申请</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>澳门成柿大学 © 2025 | 地址：虚构路88号 | 邮箱：persimmon@fake.edu</p>
+        <p class="text-sm">* 本网站纯属恶搞，所有柿子均为虚构。请勿尝试食用网页。</p>
+    </div>
+
+    <script>
+        // 交互效果
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('哈哈！你真的想加入澳门成柿大学？先吃个柿子冷静一下吧！');
+            });
+        });
+    </script>
+</body>
+</html>
